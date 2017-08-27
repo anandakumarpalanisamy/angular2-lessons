@@ -1,6 +1,97 @@
-<h1>Welcome</h1>
-<h2>My Todo List</h2>
+<div>
+    <md-toolbar color="primary">
+        <div class="todo-tool-bar">
+            <h1>My Todo App</h1>
+        </div>
+    </md-toolbar>
+    <md-card class="form-card">        
+        <md-card-title class="title">New Todo</md-card-title>
+        <md-card-content class="form-card-content">
+            <form class="todo-form">                
+                <md-input-container class="half-width-container">
+                    <input mdInput placeholder="Description">
+                </md-input-container>
+                <div></div>
+                <md-input-container class="quarter-width-container">
+                    <input mdInput placeholder="Start Date (YYYY-MM-DD)">
+                </md-input-container>                        
+                <md-input-container class="quarter-width-container">
+                    <input mdInput placeholder="End Date (YYYY-MM-DD)">
+                </md-input-container>
+                <div class="clear-fix"></div>
+                <md-input-container class="quarter-width-container">
+                    <input mdInput placeholder="Status">
+                </md-input-container>
+                <md-input-container class="quarter-width-container">
+                    <input mdInput placeholder="Priority">
+                </md-input-container>
+                <div>
+                    <button md-raised-button class="button-primary">Submit</button>   
+                </div>                                                    
+            </form>
+        </md-card-content>
+    </md-card>
+    <md-card class="todos-card">
+        <md-card-title class="title">Todos</md-card-title>
+        <md-card-content class="todos-card-content">
+            <div class="table-responsive tb-margin">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>                            
+                            <th width="30%">Description</th>
+                            <th width="10%">Priority</th>
+                            <th width="10%">Status</th>
+                            <th width="20%">Start Date</th>
+                            <th width="20%">End Date</th>
+                        </tr>                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Angular Session 1</td>
+                            <td>1</td>
+                            <td>Completed</td>
+                            <td>2017-08-23</td>
+                            <td>2017-08-23</td>
+                        </tr>
+                        <tr>
+                            <td>Angular Session 1</td>
+                            <td>1</td>
+                            <td>Completed</td>
+                            <td>2017-08-23</td>
+                            <td>2017-08-23</td>
+                        </tr>
+                        <tr>
+                            <td>Angular Session 1</td>
+                            <td>1</td>
+                            <td>Completed</td>
+                            <td>2017-08-23</td>
+                            <td>2017-08-23</td>
+                        </tr>
+                        <tr>
+                            <td>Angular Session 1</td>
+                            <td>1</td>
+                            <td>Completed</td>
+                            <td>2017-08-23</td>
+                            <td>2017-08-23</td>
+                        </tr>
+                        <tr>
+                            <td>Angular Session 1</td>
+                            <td>1</td>
+                            <td>Completed</td>
+                            <td>2017-08-23</td>
+                            <td>2017-08-23</td>
+                        </tr>
+                        <tr>
+                            <td>Angular Session 1</td>
+                            <td>1</td>
+                            <td>Completed</td>
+                            <td>2017-08-23</td>
+                            <td>2017-08-23</td>
+                        </tr>                       
 
-<ul>
-    <li *ngFor="let todo of todos">{{todo.name}}</li>
-</ul>
+                    </tbody>
+                </table>
+            </div>
+        </md-card-content>
+    </md-card>
+</div>

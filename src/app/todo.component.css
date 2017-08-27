@@ -1,0 +1,60 @@
+.todo-tool-bar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+form {
+    width: 80%;
+}
+
+.form-card {
+    height: 400px;
+}
+
+.form-card-content {
+    padding: 5px 0px;
+    height: 250px;
+    border: 2px solid rgba(0,0,0,.03);
+}
+
+.todos-card{
+    height: 700px;    
+}
+
+.todos-card-content {    
+    border: 2px solid rgba(0,0,0,.03);
+}
+
+.title {
+    background-color: #b0becc;
+    padding: 10px 10px;
+    margin-bottom: 0px;
+}
+
+.todo-form {
+    width: 100%;
+    margin: 0 5% 0 5%;
+}
+
+.half-width-container {
+    width: 50%
+}
+
+.quarter-width-container {
+    width: 25%;
+}
+
+.button-primary {
+    background: #ff4081;
+    color: #fff;
+}
+
+.tb-margin{    
+    margin: 0 5% 0 5%;
+}
