@@ -46,49 +46,13 @@
                         </tr>                        
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Angular Session 1</td>
-                            <td>1</td>
-                            <td>Completed</td>
-                            <td>2017-08-23</td>
-                            <td>2017-08-23</td>
+                        <tr *ngFor="let todo of todos">
+                            <td>{{todo.name}}</td>
+                            <td>{{todo.priority}}</td>                            
+                            <td>{{todo.startDate}}</td>
+                            <td>{{todo.endDate}}</td>
+                            <td>{{todo.status}}</td>
                         </tr>
-                        <tr>
-                            <td>Angular Session 1</td>
-                            <td>1</td>
-                            <td>Completed</td>
-                            <td>2017-08-23</td>
-                            <td>2017-08-23</td>
-                        </tr>
-                        <tr>
-                            <td>Angular Session 1</td>
-                            <td>1</td>
-                            <td>Completed</td>
-                            <td>2017-08-23</td>
-                            <td>2017-08-23</td>
-                        </tr>
-                        <tr>
-                            <td>Angular Session 1</td>
-                            <td>1</td>
-                            <td>Completed</td>
-                            <td>2017-08-23</td>
-                            <td>2017-08-23</td>
-                        </tr>
-                        <tr>
-                            <td>Angular Session 1</td>
-                            <td>1</td>
-                            <td>Completed</td>
-                            <td>2017-08-23</td>
-                            <td>2017-08-23</td>
-                        </tr>
-                        <tr>
-                            <td>Angular Session 1</td>
-                            <td>1</td>
-                            <td>Completed</td>
-                            <td>2017-08-23</td>
-                            <td>2017-08-23</td>
-                        </tr>                       
-
                     </tbody>
                 </table>
             </div>
