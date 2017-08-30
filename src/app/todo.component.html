@@ -1,6 +1,61 @@
-<h1>Welcome</h1>
-<h2>My Todo List</h2>
-
-<ul>
-    <li *ngFor="let todo of todos">{{todo.name}}</li>
-</ul>
+<div>
+    <md-toolbar color="primary">
+        <div class="todo-tool-bar">
+            <h1>My Todo App</h1>
+        </div>
+    </md-toolbar>
+    <md-card class="form-card">        
+        <md-card-title class="title">New Todo</md-card-title>
+        <md-card-content class="form-card-content">
+            <form class="todo-form">                
+                <md-input-container class="half-width-container">
+                    <input mdInput placeholder="Description">
+                </md-input-container>
+                <div></div>
+                <md-input-container class="quarter-width-container">
+                    <input mdInput placeholder="Start Date (YYYY-MM-DD)">
+                </md-input-container>                        
+                <md-input-container class="quarter-width-container">
+                    <input mdInput placeholder="End Date (YYYY-MM-DD)">
+                </md-input-container>
+                <div class="clear-fix"></div>
+                <md-input-container class="quarter-width-container">
+                    <input mdInput placeholder="Status">
+                </md-input-container>
+                <md-input-container class="quarter-width-container">
+                    <input mdInput placeholder="Priority">
+                </md-input-container>
+                <div>
+                    <button md-raised-button class="button-primary">Submit</button>   
+                </div>                                                    
+            </form>
+        </md-card-content>
+    </md-card>
+    <md-card class="todos-card">
+        <md-card-title class="title">Todos</md-card-title>
+        <md-card-content class="todos-card-content">
+            <div class="table-responsive tb-margin">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>                            
+                            <th width="30%">Description</th>
+                            <th width="10%">Priority</th>
+                            <th width="10%">Status</th>
+                            <th width="20%">Start Date</th>
+                            <th width="20%">End Date</th>
+                        </tr>                        
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let todo of todos">
+                            <td>{{todo.name}}</td>
+                            <td>{{todo.priority}}</td>                            
+                            <td>{{todo.startDate}}</td>
+                            <td>{{todo.endDate}}</td>
+                            <td>{{todo.status}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </md-card-content>
+    </md-card>
+</div>

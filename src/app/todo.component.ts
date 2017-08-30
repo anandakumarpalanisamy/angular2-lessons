@@ -17,7 +17,9 @@ export class TodoComponent {
   }
 
   ngOnInit(){
-    this.todos = this.todoService.getTodos();
+    this.todoService.getTodos().subscribe(data => {
+      this.todos = data;
+    });
   }
 
 
