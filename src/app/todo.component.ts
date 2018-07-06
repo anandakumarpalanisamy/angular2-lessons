@@ -19,9 +19,20 @@ export class TodoComponent {
   ngOnInit(){
     this.todoService.getTodos().subscribe(data => {
       this.todos = data;
+    },
+    (error) => {
+      console.log('Some error has happened');
     });
   }
 
+
+  deleteTodo(todo: Todo) {
+    this.todoService.deleteTodo(todo.id).subscribe(data => {
+      this.todoService.getTodos().subscribe(data => {
+        this.todos = data;
+      });
+    });
+  }
 
 
 }
